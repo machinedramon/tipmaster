@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0F1923; /* Dark background for the entire app */
+  color: #ABAFB7; /* Light grey text color used throughout the app */
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(109%) contrast(109%);
+}
+
+/* Styling for all scrollable elements */
+::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1923; /* Scrollbar track color */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A81E35; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ABAFB7; /* Lighter thumb color on hover */
+}
+
+.roll-animated {
+  background: linear-gradient(218deg, #f12c4c, #252f38, #ffffff);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
